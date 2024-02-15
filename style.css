@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,26 +7,23 @@
 }
 body{
     background-image: url('./background.png');
-    background-size:contain;
+    background-size:cover;
 }
 ::-webkit-scrollbar {
     width: 10px;
   }
   
-  /* Track */
   ::-webkit-scrollbar-track {
-    background: red; 
+    background: gold; 
   }
    
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888; 
   }
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: black;
-  } 
+} 
   #searchbar{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -57,21 +55,30 @@ body{
     padding: 20px 0;
     font-size: xx-large;
     font-weight: 500;
-    /* position: fixed; */
-    /* bottom: 0; */
-    /* width: 100%; */
     margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 #item{
     padding: 0;
     background-color: rgba(231, 161, 50, 0.864);
-    box-shadow: 0 0 0 1px rgba(172, 113, 18, 0.864);;
+    box-shadow: 0 0 0 1px rgba(172, 113, 18, 0.864);
     filter: drop-shadow(5px 5px 5px black);
     height: 29rem;
     border-radius: 7px;
 }
 .nav-item a{
     color: white;
+    font-size: x-large;
+}
+.nav-item a:focus{
+    border-bottom: 1px solid rgba(172, 113, 18, 0.864);
+    color: white;
+}
+.nav-item a:hover{
+    color:rgba(231, 161, 50, 0.864);
+    padding: 0.1rem;
 }
 #recipe_btn{
     background-color: rgb(19, 18, 18);
@@ -81,4 +88,19 @@ body{
 }
 .brand{
     height: 100px;
+}
+#searchbar:focus{
+    border: none;
+    filter: none;
+    outline: none;
+    box-shadow: none;
+}
+.main_qoute{
+    font-size: 80px;  
+    font-family: "Satisfy", "cursive";
+    font-weight: 500;
+    /* font-style: normal; */
+}
+#main_section{
+    height: 90vh;
 }
