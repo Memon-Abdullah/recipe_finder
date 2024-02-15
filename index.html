@@ -26,26 +26,14 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">About us</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <input class="form-control" id="searchbar" type="search" placeholder="Search Recipe" aria-label="Search">
+                  <button class="search_btn">
+                    <i class="fas fa-search search_icon"></i>
+                </button>
                 </form>
               </div>
             </div>
@@ -55,13 +43,10 @@
     <div class="container-fluid">
         <div class="container">
             <form class="col-12 col-lg-auto mb-3 mt-lg-5 mb-lg-5 me-lg-3 form d-flex">
-                <input type="search" id="search_result" class="form-control form-control-dark" placeholder="Search your Recipe here..." aria-label="Search">
-                <button class="search_btn">
-                    <i class="fas fa-search search_icon"></i>
-                </button>
+                
             </form>
             <div class="row searchResult d-flex justify-content-around flex-order-3">
-                <div data-aos="fade-right" style="color: aliceblue;">Paksitan Zindabad</div>   
+                <div data-aos="fade-right" style="color: aliceblue;">Paksitan Zindabad</div>    
                 <div class="card mt-5" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
