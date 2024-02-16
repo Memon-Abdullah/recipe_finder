@@ -27,7 +27,7 @@ function generateHTML(results){
                 <div class="card-body">
                     <h5 class="card-title">${result.recipe.label}</h5>
                     <p class="card-text">Calories: ${(result.recipe.calories).toFixed(2)}</p>
-                    <a id="recipe_btn" href="${result.recipe.url} target="_blank" class="btn"> Recipe Details</a>
+                    <a id="recipe_btn" href="${result.recipe.url}" target="_blank" class="btn"> Recipe Details</a>
                 </div>
             </div>
         `;
